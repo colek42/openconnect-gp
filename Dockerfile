@@ -24,7 +24,7 @@ RUN make install
 RUN ldconfig
 
 WORKDIR /
-ADD ./docker-entrypoint.sh ./network-routes.sh /
+ADD ./docker-entrypoint.sh /
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 
