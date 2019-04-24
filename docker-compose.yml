@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  myvpn:
+    image: colek42/openconnect
+    privileged: true
+    network_mode: host
+    env_file:
+      login.env
+    volumes:
+      - ./certs:/certs
