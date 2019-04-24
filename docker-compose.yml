@@ -2,7 +2,7 @@ version: '2'
 
 services:
   myvpn:
-    image: colek42/openconnect
+    image: colek42/openconnect-gp
     privileged: true
     network_mode: host
     env_file:
