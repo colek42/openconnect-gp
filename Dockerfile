@@ -14,9 +14,9 @@ RUN apt update \
 	git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-RUN curl -LO https://github.com/openconnect/openconnect/archive/v8.03.tar.gz
-RUN tar -xzf v8.02.tar.gz
-WORKDIR openconnect-8.02
+RUN curl -LO https://github.com/openconnect/openconnect/archive/v8.09.tar.gz
+RUN tar -xzf v8.09.tar.gz
+WORKDIR openconnect-8.09
 RUN ./autogen.sh
 RUN ./configure
 RUN make
